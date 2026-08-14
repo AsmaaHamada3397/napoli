@@ -3,30 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Napoli</title>
 
+    <!------------- Libraries ----------------------->
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      integrity="sha384-FKyoEForCGlyvwxH9j09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css"
+    />
+
+    <!------------------- Style ----------------------->
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body dir="rtl">
-    <header class="container">
-      <nav class="d-flex justify-content-between align-items-center">
-        <img src="./images/logo.svg" class="logo" alt="" />
 
-        <ul class=" align-items-center list-unstyled text-brown fs-5 d-none d-md-flex">
+  <body dir="rtl">
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <nav class="d-flex justify-content-between align-items-center container">
+        <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+
+        <ul
+          class="align-items-center list-unstyled text-white fs-5 d-none d-md-flex"
+        >
           <li>الرئيسية</li>
           <li>قصتنا</li>
           <li>المنيو</li>
@@ -40,10 +65,314 @@
         >
           اطلب الان
         </button>
+
         <div class="d-block d-md-none">
           <i class="fa-solid fa-bars fs-3"></i>
         </div>
       </nav>
     </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <!-- ================= MAIN SWIPER ================= -->
+
+      <div class="swiper hero-main">
+        <div class="swiper-wrapper">
+          <!-- ================= SLIDE 1 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;./images/choclate.jpg&quot;)"
+          >
+            <!-- <div class="hero-content">
+
+              <span class="hero-label">
+                جديدنا
+              </span>
+
+              <h1>
+                اكتشفوا<br />
+                جديدنا
+              </h1>
+
+              <p>
+                أحدث إبداعات قصر نابولي بطعم لا يُنسى.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف المنتج ←
+              </a>
+
+            </div> -->
+          </div>
+          <!-- ================= SLIDE 2 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/molid.jpg&quot;)"
+          >
+            <!-- <div class="hero-content">
+
+              <span class="hero-label">
+                لكل مناسبة
+              </span>
+
+              <h1>
+                لحظاتكم<br />
+                أحلى معنا
+              </h1>
+
+              <p>
+                اختيارات صنعت خصيصًا لكل لحظة تستحق الاحتفال.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف المناسبات ←
+              </a>
+
+            </div> -->
+          </div>
+          <!-- ================= SLIDE 3 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/occassions.jpg&quot;)"
+          >
+            <!-- <div class="hero-content">
+
+              <span class="hero-label">
+                عروضنا
+              </span>
+
+              <h1>
+                حلاوة<br />
+                بسعر أحلى
+              </h1>
+
+              <p>
+                اكتشف أحدث عروض قصر نابولي.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف العروض ←
+              </a>
+
+            </div> -->
+          </div>
+
+          <!-- ================= SLIDE 4 ================= -->
+
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/special.jpg&quot;)"
+          >
+            <!-- <div class="hero-content">
+
+              <span class="hero-label">
+                طلبات خاصة
+              </span>
+
+              <h1>
+                مناسبتك<br />
+                تستاهل حاجة خاصة
+              </h1>
+
+              <p>
+                تورت وحلويات مصممة عشان لحظتك تكون مختلفة.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اعرف المزيد ←
+              </a>
+
+            </div> -->
+          </div>
+
+          <!-- ================= SLIDE 5 ================= -->
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(&quot;./images/118473307_2022696227861881_8301289870218140727_n.jpg&quot;);
+            "
+          >
+            <div class="hero-content">
+              <span class="hero-label"> منذ 2000 </span>
+
+              <h1>أكثر من 25 عامًا من الحكاية</h1>
+
+              <p>خبرة صنعتها سنوات من الجودة والحب والتميز.</p>
+
+              <a href="#" class="hero-btn"> قصتنا ← </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VERTICAL PAGINATION ================= -->
+
+      <div class="hero-pagination">
+        <button class="pagination-item active" data-slide="0">
+          <span>01</span>
+          <small>جديدنا</small>
+        </button>
+
+        <button class="pagination-item" data-slide="1">
+          <span>02</span>
+          <small>مناسبات</small>
+        </button>
+
+        <button class="pagination-item" data-slide="2">
+          <span>03</span>
+          <small>عروضنا</small>
+        </button>
+
+        <button class="pagination-item" data-slide="3">
+          <span>04</span>
+          <small>طلبات خاصة</small>
+        </button>
+
+        <button class="pagination-item" data-slide="4">
+          <span>05</span>
+          <small>منذ 2000</small>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================ experiences ================  -->
+
+    <section class="container">
+      <div class="experiences row gap-5">
+        <div class="card col-12 col-md-6 col-lg-3">
+          <h2 class="text-brown">+25</h2>
+          <p class="text-brown">عام من الخبرة</p>
+        </div>
+
+        <div class="card col-12 col-md-6 col-lg-3">
+          <h2 class="text-brown">+8</h2>
+          <p class="text-brown">فروع</p>
+        </div>
+
+        <div class="card col-12 col-md-6 col-lg-3">
+          <h2 class="text-brown">+200K</h2>
+          <p class="text-brown">عملاء</p>
+        </div>
+
+        <div class="card col-12 col-md-6 col-lg-3">
+          <h2 class="text-brown">+100</h2>
+          <p class="text-brown">مذاق</p>
+        </div>
+
+        <!-- <div class="card">
+                <h2 class="text-brown">+25</h2>
+                <p class="text-brown">خبرة</p>
+            </div> -->
+      </div>
+    </section>
+
+    <!--================== about us ================-->
+
+    <section class="container my-4 about">
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <hr />
+        <p class="text-orange fw-bold">من نحن</p>
+        <hr />
+      </div>
+      <div class="row py-5">
+        <div class="col-12 col-lg-7">
+          <div class="pb-5">
+            <h1 class="text-brown">أكثر من 25 عاماً</h1>
+            <span class="text-orange">من الحكاية</span>
+          </div>
+          <p>
+            منذ عام 2000, بدأ قصر نابولي رحلته بشغف واحد: <br />
+            أن نصنع لحظات حلوة تبقي في الذاكرة
+          </p>
+
+          <p>
+            نقدم لكم مجموعة متنوعة من الحلويات الشرقية و الغربية , المخبوزات
+            <br />الطازجة و الفطائر , التورت , الجاتوه و الشيكولاته, <br />
+            بجودة تحرص عليها في كل تفصيلة
+          </p>
+
+          <p>
+            و مع 8 فروع في أنحاء المحافظة , نواصل التوسع لتكون أقرب إليكم ...
+            <br />
+            و نبقي دائما جزءا من مناسباتكم السعيده
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <img
+            src="images/118473307_2022696227861881_8301289870218140727_n.jpg"
+            class="about-img"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!--================== products ================-->
+    <section class="container my-4 about">
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <hr />
+        <p class="text-orange fw-bold">ما نقدمه</p>
+        <hr />
+      </div>
+    </section>
+    <!------------------- Scripts ----------------------->
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js"></script>
+
+    <script>
+      // =========================
+      // MAIN SWIPER
+      // =========================
+
+      const mainSwiper = new Swiper(".hero-main", {
+        effect: "fade",
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        speed: 900,
+
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // =========================
+      // CUSTOM VERTICAL PAGINATION
+      // =========================
+
+      const paginationItems = document.querySelectorAll(".pagination-item");
+
+      // Update active pagination item
+
+      function updatePagination(index) {
+        paginationItems.forEach((item, i) => {
+          item.classList.toggle("active", i === index);
+        });
+      }
+
+      // Pagination click
+
+      paginationItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const index = Number(item.dataset.slide);
+
+          mainSwiper.slideTo(index);
+        });
+      });
+
+      // Update pagination when slide changes
+
+      mainSwiper.on("slideChange", () => {
+        updatePagination(mainSwiper.realIndex);
+      });
+    </script>
   </body>
 </html>
