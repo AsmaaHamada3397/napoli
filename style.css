@@ -47,6 +47,10 @@ body {
   color: #f95307;
 }
 
+.border-orange {
+  border: 1px solid #f95307;
+}
+
 header {
   position: absolute;
   top: 2rem;
@@ -131,11 +135,11 @@ header {
   border-radius: 1rem;
 
   background: linear-gradient(
-    90deg,
-    rgba(20, 10, 5, 0.7) 0%,
-    rgba(20, 10, 5, 0.5) 35%,
-    rgba(20, 10, 5, 0.5) 50%,
-    rgba(0, 0, 0, 0.15) 100%
+    270deg,
+    rgba(36, 22, 15, 0.9) 0%,
+    rgba(36, 22, 15, 0) 25%,
+    rgba(36, 22, 15, 0.9) 95%,
+    rgba(36, 22, 15, 0.9) 100%
   );
 }
 
@@ -324,6 +328,8 @@ header {
   }
 }
 
+/*---------------------------- experiences ----------------------------*/
+
 .experiences {
   margin: 3rem 0;
   padding: 1rem;
@@ -337,12 +343,11 @@ header {
     width: calc(23% - 1rem);
 
     @media screen and (max-width: 767px) {
-        width: calc(100% - 1rem);
+      width: calc(100% - 1rem);
     }
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
-        width: calc(50% - 1rem);
-        
+      width: calc(50% - 1rem);
     }
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem rgba(118, 117, 117, 0.1);
@@ -363,32 +368,45 @@ header {
   }
 }
 
+.crown {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*---------------------------- about ----------------------------*/
+
 .about {
   h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     word-spacing: 0.5rem;
   }
   span {
     word-spacing: 0.25rem;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     line-height: 1;
   }
 
-  hr{
+  hr {
     width: 100px;
     position: relative;
-    top:0.2rem;
     border: 1px solid #f95307;
-
   }
 
   p {
     padding-top: 1rem;
     font-family: "Beiruti", sans-serif;
-    font-size: 1.75rem;
+    font-size: clamp(1.2rem, 2vw, 1.75rem);
     word-spacing: 0.25rem;
+    width: 70%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   .about-img {
@@ -397,5 +415,103 @@ header {
     border-radius: 1rem;
     object-fit: cover;
     object-position: start;
+
+    @media screen and (max-width: 767px) {
+      min-height: 300px;
+      
+    }
+  }
+}
+
+/*---------------------------- products ----------------------------*/
+
+.products {
+  padding: 1rem;
+  hr {
+    width: 100px;
+    position: relative;
+    border: 1px solid #f95307;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    word-spacing: 0.5rem;
+  }
+  p {
+    padding-top: 1rem;
+    font-family: "Beiruti", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.75rem);
+    word-spacing: 0.25rem;
+  }
+
+  .crown {
+    transform: translate(-50%, -80%);
+  }
+
+  .cat-card {
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem rgba(118, 117, 117, 0.1);
+    border: 1px solid rgba(153, 152, 152, 0.1);
+    max-height: 400px;
+    min-height: 400px;
+    overflow: hidden;
+    .back-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+       max-height: 400px;
+    min-height: 400px;
+      
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(36, 22, 15, 0.2) 0%,
+        rgba(36, 22, 15, 0.2) 25%,
+        rgba(36, 22, 15, 0.939) 75%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      color: white;
+      padding: 2rem;
+      z-index: 20;
+      gap: clamp(0.5rem, 2vw, 1rem);
+      transition: all 0.5s ease-in-out;
+
+
+      .icon{
+        width: 30px;
+        height: 30px;
+
+        @media screen and (max-width: 767px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      button{
+
+      }
+      .arrow-icon{
+        width: 20px;
+        height: 20px;
+      }
+
+      h3{
+        width: 100%;
+        max-width: 200px;
+        font-size: clamp(1rem, 2vw, 1.5rem);      
+      }
+    }
   }
 }

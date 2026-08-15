@@ -271,9 +271,12 @@
     <!--================== about us ================-->
 
     <section class="container my-4 about">
-      <div class="d-flex justify-content-center align-items-center gap-3">
+      <div
+        class="d-flex justify-content-center align-items-center gap-3 position-relative"
+      >
+        <img src="./images/crown.svg" class="crown" alt="" />
         <hr />
-        <p class="text-orange fw-bold">من نحن</p>
+        <h3 class="text-orange fw-bold">من نحن</h3>
         <hr />
       </div>
       <div class="row py-5">
@@ -283,20 +286,19 @@
             <span class="text-orange">من الحكاية</span>
           </div>
           <p>
-            منذ عام 2000, بدأ قصر نابولي رحلته بشغف واحد: <br />
-            أن نصنع لحظات حلوة تبقي في الذاكرة
+            منذ عام 2000, بدأ قصر نابولي رحلته بشغف واحد: أن نصنع لحظات حلوة
+            تبقي في الذاكرة
           </p>
 
           <p>
             نقدم لكم مجموعة متنوعة من الحلويات الشرقية و الغربية , المخبوزات
-            <br />الطازجة و الفطائر , التورت , الجاتوه و الشيكولاته, <br />
-            بجودة تحرص عليها في كل تفصيلة
+            الطازجة و الفطائر , التورت , الجاتوه و الشيكولاته, بجودة تحرص عليها
+            في كل تفصيلة
           </p>
 
           <p>
-            و مع 8 فروع في أنحاء المحافظة , نواصل التوسع لتكون أقرب إليكم ...
-            <br />
-            و نبقي دائما جزءا من مناسباتكم السعيده
+            و مع 8 فروع في أنحاء المحافظة , نواصل التوسع لتكون أقرب إليكم ... و
+            نبقي دائما جزءا من مناسباتكم السعيده
           </p>
         </div>
 
@@ -310,13 +312,151 @@
       </div>
     </section>
 
-
     <!--================== products ================-->
-    <section class="container my-4 about">
-      <div class="d-flex justify-content-center align-items-center gap-3">
+    <section class="container my-4 products">
+      <div
+        class="d-flex justify-content-center align-items-center gap-3 pb-4 position-relative"
+      >
+        <img src="./images/crown.svg" class="crown" alt="" />
+
         <hr />
-        <p class="text-orange fw-bold">ما نقدمه</p>
+        <h3 class="text-orange fw-bold">ما نقدمه</h3>
         <hr />
+      </div>
+
+      <h1 class="text-brown text-center lh-1">ما الذي تشتهيه اليوم؟</h1>
+
+      <p class="text-brown text-center lh-1">
+        أختر ما يلائم ذوقك من حلويات و مخبوزات قصر نابولي
+      </p>
+
+      <div class="row g-3 py-5">
+        <div class="col-12 col-md-6">
+          <div class="cat-card position-relative">
+            <img src="images/bakary2.jpg" class="back-img" alt="..." />
+
+            <!--overlay-->
+            <div class="overlay">
+              <div class="border-orange rounded-circle p-2">
+                <img src="./icons/at-croissant-thin.svg" class="icon" />
+              </div>
+              <h2 class="">مذاق مالح</h2>
+              <h3 class="text-orange">فطائر و مخبوزات مالحة</h3>
+
+              <button
+                class="btn border-orange rounded-circle d-flex justify-content-center align-items-center p-2 mt-md-4"
+              >
+                <img
+                  src="./icons/at-arrow-right-thin.svg"
+                  class="arrow-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="cat-card position-relative">
+            <img src="images/gateau.jpg" class="back-img" alt="..." />
+
+            <!--overlay-->
+            <div class="overlay">
+              <div class="border-orange rounded-circle p-2">
+                <img src="./icons/at-pie-slice-thin.svg" class="icon" />
+              </div>
+              <h2 class="">مذاق حلو</h2>
+              <h3 class="text-orange">حلويات و جاتوه</h3>
+
+              <button
+                class="btn border-orange rounded-circle d-flex justify-content-center align-items-center p-2 mt-md-4"
+              >
+                <img
+                  src="./icons/at-arrow-right-thin.svg"
+                  class="arrow-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <div class="cat-card position-relative">
+            <img src="images/فطائر.jpg" class="back-img" alt="..." />
+
+            <!--overlay-->
+            <div class="overlay">
+              <div class="border-orange rounded-circle p-2">
+                <img src="./icons/at-pie-thin.svg" class="icon" />
+              </div>
+              <h2 class="">فطائر طازجة</h2>
+              <h3 class="text-orange">فطائر حلو و مالح</h3>
+
+              <button
+                class="btn border-orange rounded-circle d-flex justify-content-center align-items-center p-2 mt-md-4"
+              >
+                <img
+                  src="./icons/at-arrow-right-thin.svg"
+                  class="arrow-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <div class="cat-card position-relative">
+            <img src="images/occ.jpg" class="back-img" alt="..." />
+
+            <!--overlay-->
+            <div class="overlay">
+              <div class="border-orange rounded-circle p-2">
+                <img src="./icons/at-wedding-cake-thin.svg" class="icon" />
+              </div>
+              <h2 class="">لديك مناسبة؟</h2>
+              <h3 class="text-orange">تورت</h3>
+
+              <button
+                class="btn border-orange rounded-circle d-flex justify-content-center align-items-center p-2 mt-md-4"
+              >
+                <img
+                  src="./icons/at-arrow-right-thin.svg"
+                  class="arrow-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="cat-card position-relative">
+            <img src="images/ice can.jpg" class="back-img" alt="..." />
+
+            <!--overlay-->
+            <div class="overlay">
+              <div class="border-orange rounded-circle p-2">
+                <img src="./icons/at-pie-slice-thin.svg" class="icon" />
+              </div>
+              <h2 class="">مذاق انتعاش</h2>
+              <h3 class="text-orange">ايس كان</h3>
+
+              <button
+                class="btn border-orange rounded-circle d-flex justify-content-center align-items-center p-2 mt-md-4"
+              >
+                <img
+                  src="./icons/at-arrow-right-thin.svg"
+                  class="arrow-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!------------------- Scripts ----------------------->
