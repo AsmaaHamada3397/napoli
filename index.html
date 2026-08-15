@@ -330,12 +330,11 @@
         أختر ما يلائم ذوقك من حلويات و مخبوزات قصر نابولي
       </p>
 
-      <div class="row g-3 py-5">
+      <!-- <div class="row g-3 py-5">
         <div class="col-12 col-md-6">
           <div class="cat-card position-relative">
             <img src="images/bakary2.jpg" class="back-img" alt="..." />
 
-            <!--overlay-->
             <div class="overlay">
               <div class="border-orange rounded-circle p-2">
                 <img src="./icons/at-croissant-thin.svg" class="icon" />
@@ -359,7 +358,6 @@
           <div class="cat-card position-relative">
             <img src="images/gateau.jpg" class="back-img" alt="..." />
 
-            <!--overlay-->
             <div class="overlay">
               <div class="border-orange rounded-circle p-2">
                 <img src="./icons/at-pie-slice-thin.svg" class="icon" />
@@ -386,7 +384,6 @@
           <div class="cat-card position-relative">
             <img src="images/فطائر.jpg" class="back-img" alt="..." />
 
-            <!--overlay-->
             <div class="overlay">
               <div class="border-orange rounded-circle p-2">
                 <img src="./icons/at-pie-thin.svg" class="icon" />
@@ -412,7 +409,6 @@
           <div class="cat-card position-relative">
             <img src="images/occ.jpg" class="back-img" alt="..." />
 
-            <!--overlay-->
             <div class="overlay">
               <div class="border-orange rounded-circle p-2">
                 <img src="./icons/at-wedding-cake-thin.svg" class="icon" />
@@ -437,7 +433,6 @@
           <div class="cat-card position-relative">
             <img src="images/ice can.jpg" class="back-img" alt="..." />
 
-            <!--overlay-->
             <div class="overlay">
               <div class="border-orange rounded-circle p-2">
                 <img src="./icons/at-pie-slice-thin.svg" class="icon" />
@@ -454,6 +449,44 @@
                   alt=""
                 />
               </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/occ.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/bakary.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/فطائر.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/gateau.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img
+                src="images/619220248_18337468462211457_9206508841696494960_n.webp"
+                class="back-img"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -512,6 +545,48 @@
 
       mainSwiper.on("slideChange", () => {
         updatePagination(mainSwiper.realIndex);
+      });
+    </script>
+
+    <script>
+      const productsSwiper = new Swiper(".products-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        centeredSlides: false,
+
+        loop: true,
+
+        speed: 800,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        grabCursor: true,
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          480: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
   </body>
