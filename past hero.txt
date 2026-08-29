@@ -1,0 +1,482 @@
+  <section class="hero">
+      <!-- ================= MAIN SWIPER ================= -->
+
+      <div class="swiper hero-main">
+        <div class="swiper-wrapper">
+          <!-- ================= SLIDE 1 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/chocolate2.jpg)"
+          >
+            <div class="hero-content">
+
+              <span class="hero-label">
+                جديدنا
+              </span>
+
+              <h1>
+                اكتشفوا<br />
+                جديدنا
+              </h1>
+
+              <p>
+                أحدث إبداعات قصر نابولي بطعم لا يُنسى.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف المنتج ←
+              </a>
+
+            </div>
+          </div>
+          <!-- ================= SLIDE 2 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/molid.jpg&quot;)"
+          >
+            <div class="hero-content">
+
+              <span class="hero-label">
+                لكل مناسبة
+              </span>
+
+              <h1>
+                لحظاتكم<br />
+                أحلى معنا
+              </h1>
+
+              <p>
+                اختيارات صنعت خصيصًا لكل لحظة تستحق الاحتفال.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف المناسبات ←
+              </a>
+
+            </div>
+          </div>
+          <!-- ================= SLIDE 3 ================= -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/occassions.jpg&quot;)"
+          >
+            <div class="hero-content">
+
+              <span class="hero-label">
+                عروضنا
+              </span>
+
+              <h1>
+                حلاوة<br />
+                بسعر أحلى
+              </h1>
+
+              <p>
+                اكتشف أحدث عروض قصر نابولي.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اكتشف العروض ←
+              </a>
+
+            </div>
+          </div>
+
+          <!-- ================= SLIDE 4 ================= -->
+
+          <div
+            class="swiper-slide"
+            style="background-image: url(&quot;images/special.jpg&quot;)"
+          >
+            <div class="hero-content">
+
+              <span class="hero-label">
+                طلبات خاصة
+              </span>
+
+              <h1>
+                مناسبتك<br />
+                تستاهل حاجة خاصة
+              </h1>
+
+              <p>
+                تورت وحلويات مصممة عشان لحظتك تكون مختلفة.
+              </p>
+
+              <a href="#" class="hero-btn">
+                اعرف المزيد ←
+              </a>
+
+            </div>
+          </div>
+
+          <!-- ================= SLIDE 5 ================= -->
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(&quot;./images/118473307_2022696227861881_8301289870218140727_n.jpg&quot;);
+            "
+          >
+            <div class="hero-content">
+              <span class="hero-label"> منذ 2000 </span>
+
+              <h1>أكثر من 25 عامًا من الحكاية</h1>
+
+              <p>خبرة صنعتها سنوات من الجودة والحب والتميز.</p>
+
+              <a href="#" class="hero-btn"> قصتنا ← </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VERTICAL PAGINATION ================= -->
+
+      <div class="hero-pagination ">
+        <button class="pagination-item pb-4 active" data-slide="0">
+          <span></span>
+          <!-- <small>جديدنا</small> -->
+        </button>
+
+        <button class="pagination-item pb-4" data-slide="1">
+          <!-- <span>02</span> -->
+          <!-- <small>مناسبات</small> -->
+        </button>
+
+        <button class="pagination-item pb-4" data-slide="2">
+          <!-- <span>03</span> -->
+          <!-- <small>عروضنا</small> -->
+        </button>
+
+        <button class="pagination-item pb-4" data-slide="3">
+          <!-- <span>04</span> -->
+          <!-- <small>طلبات خاصة</small> -->
+        </button>
+
+        <button class="pagination-item" data-slide="4">
+          <!-- <span>05</span> -->
+          <!-- <small>منذ 2000</small> -->
+        </button>
+      </div>
+    </section>
+
+    =================
+    js 
+
+     <script>
+      // =========================
+      // MAIN SWIPER
+      // =========================
+
+      const mainSwiper = new Swiper(".hero-main", {
+        effect: "fade",
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        speed: 900,
+
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // =========================
+      // CUSTOM VERTICAL PAGINATION
+      // =========================
+
+      const paginationItems = document.querySelectorAll(".pagination-item");
+
+      // Update active pagination item
+
+      function updatePagination(index) {
+        paginationItems.forEach((item, i) => {
+          item.classList.toggle("active", i === index);
+        });
+      }
+
+      // Pagination click
+
+      paginationItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const index = Number(item.dataset.slide);
+
+          mainSwiper.slideTo(index);
+        });
+      });
+
+      // Update pagination when slide changes
+
+      mainSwiper.on("slideChange", () => {
+        updatePagination(mainSwiper.realIndex);
+      });
+    </script>
+
+    =============
+
+    css 
+
+
+    .hero {
+  position: relative;
+  width: calc(100% - 2rem);
+  height: 95vh;
+  /* min-height: 650px; */
+  @media screen and (max-width: 767px) {
+    height: 10vh;
+  }
+
+  margin: 10px auto;
+
+  overflow: hidden;
+  border-radius: 28px;
+
+  background: #24160f;
+}
+
+/* ========================= MAIN SWIPER ========================= */
+
+.hero-main {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-main .swiper-slide {
+  position: relative;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+
+  /* @media screen and (max-width: 768px) {
+   background-size: contain;
+   background-repeat: no-repeat;
+    
+  } */
+}
+
+.hero-main .swiper-slide::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+
+  /* background: linear-gradient(
+    90deg,
+    rgba(21, 21, 21, 0) 0%,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
+}
+
+/* =========================
+           HERO CONTENT
+        ========================= */
+
+.hero-content {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 50%;
+  right: 12%;
+
+  transform: translateY(-50%);
+
+  max-width: 500px;
+
+  text-align: right;
+}
+
+.hero-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #f95307;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  margin-bottom: 18px;
+  color: white;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.95;
+  font-weight: 800;
+}
+
+.hero-content p {
+  max-width: 430px;
+
+  margin-bottom: 28px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 13px 25px;
+
+  border-radius: 12px;
+
+  background: #f95307;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+           VERTICAL PAGINATION
+        ========================= */
+
+.hero-pagination {
+  position: absolute;
+
+  z-index: 10;
+
+  left: 35px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    top: 90%;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
+}
+
+.pagination-item {
+  position: relative;
+
+  border: 0;
+  background: transparent;
+
+  color: #ffffff99;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition: 0.35s ease;
+}
+
+.pagination-item span {
+  display: block;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.pagination-item small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 16px;
+}
+
+.pagination-item.active {
+  color: #f95307;
+}
+
+.pagination-item.active::before {
+  content: "";
+
+  position: absolute;
+
+  left: -18px;
+  top: 2px;
+
+  width: 3px;
+  height: 42px;
+
+  border-radius: 5px;
+
+  background: #f95307;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+.pagination-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: -18px;
+  top: 2px;
+
+  width: 3px;
+  height: 42px;
+
+  border-radius: 5px;
+
+  background: #ffffff99;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (max-width: 900px) {
+  .hero {
+    width: calc(100% - 1rem);
+    min-height: 700px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content {
+    right: 10%;
+    left: 10%;
+
+    max-width: none;
+  }
+
+  .hero-pagination {
+    left: 20px;
+  }
+}
