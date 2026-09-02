@@ -360,7 +360,7 @@ header {
   }
 
   .card {
-    min-height: 300px;
+    height: 350px;
     background-color: #fff4d6;
     border: 0 !important;
     /* padding: 1rem; */
@@ -370,28 +370,45 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     img {
-      width: 50%;
-      height: 50%;
-      object-fit: cover;
-      padding: 10px 0;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
     }
     .product-details {
-      background-color: #f9540731;
-      border-radius: 1rem;
+      background-color: #f954071a;
+      border-radius: 1rem 1rem 0 0;
     }
-    /* .addToCart{
-      position: absolute;
-      bottom: 0rem;
+
+    .orange-rect {
+      background-color: #f95307;
+      height: 1.5rem;
       width: 100%;
-      height: 1rem;
+      border-radius: 0 0rem 1rem 1rem;
+    }
+
+    .addToCart {
+      position: absolute;
+      bottom: -3rem;
+      right: -4rem;
+      width: 130px;
+      height: 130px;
       background-color: #f95307;
       border-radius: 1rem;
+      border-radius: 50%;
       color: #fff;
       font-weight: 600;
       z-index: 100;
-    } */
+     i{
+      font-size: 1.125rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-150%, -150%);
+     }
+    }
   }
 }
 /*------------- branches -------------*/
