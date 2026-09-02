@@ -93,7 +93,6 @@
     </section>
 
     <!-- ================ experiences ================  -->
-
     <section class="container my-5">
       <div class="experiences row gap-5 gap-md-0">
         <div class="card col-12 col-md-6 col-lg-3">
@@ -127,16 +126,10 @@
             <p class="">مذاق</p>
           </div>
         </div>
-
-        <!-- <div class="card">
-                <h2 class="text-brown">+25</h2>
-                <p class="text-brown">خبرة</p>
-            </div> -->
       </div>
     </section>
 
     <!--================== about us ================-->
-
     <section class="container my-4 about">
       <div
         class="d-flex justify-content-center align-items-center gap-3 position-relative"
@@ -191,11 +184,13 @@
         <hr />
       </div>
 
-      <h1 class="text-brown text-center lh-1">ما الذي تشتهيه اليوم؟</h1>
+      <h1 class="text-brown text-center lh-1 mb-3">
+        أختر ما يلائم ذوقك من قصر نابولي
+      </h1>
 
-      <p class="text-brown text-center lh-1">
+      <!-- <p class="text-brown text-center lh-1">
         أختر ما يلائم ذوقك من حلويات و مخبوزات قصر نابولي
-      </p>
+      </p> -->
 
       <!-- <div class="row g-3 py-5">
         <div class="col-12 col-md-6">
@@ -327,6 +322,42 @@
             <div class="cat-card">
               <img src="images/occ.jpg" class="back-img" alt="" />
             </div>
+            <!-- <h2 class="text-center mt-3">تورت</h2> -->
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/bakary.jpg" class="back-img" alt="" />
+            </div>
+            <!-- <h4 class="text-center mt-3">مخبوزات</h4> -->
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/فطائر.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/gateau.jpg" class="back-img" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img
+                src="images/619220248_18337468462211457_9206508841696494960_n.webp"
+                class="back-img"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="swiper-slide product-slide">
+            <div class="cat-card">
+              <img src="images/occ.jpg" class="back-img" alt="" />
+            </div>
           </div>
 
           <div class="swiper-slide product-slide">
@@ -360,6 +391,59 @@
       </div>
     </section>
 
+    <!--=================== new product =============-->
+    <div class="container new-product my-4">
+      <div
+        class="d-flex justify-content-center align-items-center gap-3 pb-4 position-relative"
+      >
+        <img src="./images/crown.svg" class="crown" alt="" />
+
+        <hr />
+        <h3 class="text-orange fw-bold">جديدنا</h3>
+        <hr />
+      </div>
+
+      <div>
+        <img
+          src="./images/banner.jpg"
+          class="w-100 object-fit-cover rounded-4"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!--==========================best selling================-->
+    <div class="container best-seller my-4">
+      <div
+        class="d-flex justify-content-center align-items-center gap-3 pb-4 position-relative"
+      >
+        <img src="./images/crown.svg" class="crown" alt="" />
+
+        <hr />
+        <h3 class="text-orange fw-bold">الاكثر طلبا</h3>
+        <hr />
+      </div>
+
+      <div class="row g-5">
+        <div class="col-12 col-md-2 col-lg-3">
+          <div class="card position-relative">
+            <img src="./hero/ice-can.png" class="" alt="" />
+            <div class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center ">
+              <h4>djhgj</h4>
+              <h4>20LE</h4>
+            </div>
+
+            <!-- <div class="addToCart">
+            kjdhf
+            </div> -->
+          </div>
+        </div>
+        <div class="col-12 col-md-2 col-lg-3">jhgj</div>
+
+        <div class="col-12 col-md-2 col-lg-3">jhjkh</div>
+        <div class="col-12 col-md-2 col-lg-3">jhjkh</div>
+      </div>
+    </div>
     <!--=================== branches =============-->
     <section class="container my-4 branches">
       <div
@@ -454,6 +538,12 @@
 
     <!------------------- Scripts ----------------------->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./script.js"></script>
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js"></script>
@@ -473,11 +563,10 @@
 
     <script>
       const productsSwiper = new Swiper(".products-swiper", {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 20,
 
         centeredSlides: false,
-
         loop: true,
 
         speed: 800,
@@ -485,28 +574,44 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         },
 
         grabCursor: true,
 
         breakpoints: {
           0: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-
-          480: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.2,
             spaceBetween: 15,
           },
 
-          768: {
+          480: {
             slidesPerView: 2,
+            spaceBetween: 15,
+          },
+
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          992: {
+            slidesPerView: 4,
             spaceBetween: 20,
           },
 
           1200: {
-            slidesPerView: 3,
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+
+          1400: {
+            slidesPerView: 6,
             spaceBetween: 20,
           },
         },
