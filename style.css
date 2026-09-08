@@ -378,15 +378,19 @@ header {
       object-fit: contain;
     }
     .product-details {
+
+height: 150px;
       background-color: #f954071a;
       border-radius: 1rem 1rem 0 0;
+
     }
 
     .orange-rect {
       background-color: #f95307;
       height: 1.5rem;
       width: 100%;
-      border-radius: 0 0rem 1rem 1rem;
+      border-radius: 0 0rem 1rem 1rem;   
+
     }
 
     .addToCart {
