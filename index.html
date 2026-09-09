@@ -65,8 +65,39 @@
           اطلب الان
         </button>
 
-        <div class="d-block d-md-none">
-          <i class="fa-solid fa-bars fs-3"></i>
+        <button
+          class="d-block d-md-none btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+        >
+          <i class="fa-solid fa-bars fs-4 text-orange"></i>
+        </button>
+
+        <div id="mobileMenu" class="offcanvas offcanvas-end">
+          <div class=" d-flex justify-content-between align-items-center py-4">
+            <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark fs-4 text-orange"></i>
+          </button>
+          </div>
+
+          <ul
+            class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
+          >
+            <li>الرئيسية</li>
+            <li>قصتنا</li>
+            <li>المنيو</li>
+            <li>مناسبات</li>
+            <li>عروضنا</li>
+            <li>فروعنا</li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -441,11 +472,11 @@
             </div>
           </div>
         </div>
-         <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="card position-relative">
             <img src="./hero/ice-can.png" class="" alt="" />
             <div
-              class="p-4  w-100 product-details d-flex flex-column align-items-center justify-content-center"
+              class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
             >
               <h3>ايس كان</h3>
               <h3>20 ج.م</h3>
@@ -456,7 +487,8 @@
               <!-- <i class="fa-solid fa-plus"></i> -->
             </div>
           </div>
-        </div>  <div class="col-12 col-md-6 col-lg-3">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="card position-relative">
             <img src="./hero/image-removebg-preview (1).png" class="" alt="" />
             <div
@@ -471,7 +503,8 @@
               <!-- <i class="fa-solid fa-plus"></i> -->
             </div>
           </div>
-        </div>  <div class="col-12 col-md-6 col-lg-3">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="card position-relative">
             <img src="./hero/croissant-removebg-preview.png" class="" alt="" />
             <div
@@ -524,7 +557,7 @@
     </section>
 
     <!--=================== footer ================-->
-    <footer class="border-top mt-5">
+    <footer class="border-top mt-5 bg-brown text-white">
       <div class="container pt-5">
         <section class="row g-5">
           <div class="col-12 col-md-4">
@@ -548,7 +581,7 @@
             </ul>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 text-white">
             <h4 class="fw-bold">اتصل بنا</h4>
 
             <p class="mb-0">تليفون:<span dir="ltr">010 123 1234 </span></p>
@@ -561,19 +594,19 @@
 
             <div class="d-flex gap-3">
               <a href="https://www.facebook.com/kasrnapoly" target="_blank">
-                <i class="fa-brands fa-facebook fs-4 text-brown"></i>
+                <i class="fa-brands fa-facebook fs-4 text-orange"></i>
               </a>
 
               <a href="https://wa.me/20101231234" target="_blank">
-                <i class="fa-brands fa-whatsapp fs-4 text-brown"></i>
+                <i class="fa-brands fa-whatsapp fs-4 text-orange"></i>
               </a>
 
               <a href="https://www.instagram.com/kasr_napoly/" target="_blank">
-                <i class="fa-brands fa-instagram fs-4 text-brown"></i>
+                <i class="fa-brands fa-instagram fs-4 text-orange"></i>
               </a>
 
               <a href="https://www.tiktok.com/@kasr_napoli" target="_blank">
-                <i class="fa-brands fa-tiktok fs-4 text-brown"></i>
+                <i class="fa-brands fa-tiktok fs-4 text-orange"></i>
               </a>
             </div>
           </div>
@@ -626,7 +659,7 @@
 
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.25,
             spaceBetween: 15,
           },
 

@@ -107,6 +107,38 @@ header {
       width: 120px;
     }
   }
+
+  .btn-close{
+    color: #f95307 !important;
+  }
+
+  .offcanvas{
+    background-color: #24160f !important;
+    backdrop-filter: blur(14px);
+    width: 100% !important;
+    padding: 0 1rem !important;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
+  }
+  .offcanvas-end{
+    background-color: transparent !important;
+    /* backdrop-filter: blur(14px); */
+    box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
+  }
+  .offcanvas-backdrop.show{
+    background-color: #24160f !important;
+    opacity: 0.8 !important;
+
+  }
+
+  .offcanvas-backdrop {
+    position: fixed;
+    top: -13px;
+    left: -17px;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;}
 }
 
 /*---------------- hero ---------------*/
@@ -378,19 +410,16 @@ header {
       object-fit: contain;
     }
     .product-details {
-
-height: 150px;
+      height: 150px;
       background-color: #f954071a;
       border-radius: 1rem 1rem 0 0;
-
     }
 
     .orange-rect {
       background-color: #f95307;
       height: 1.5rem;
       width: 100%;
-      border-radius: 0 0rem 1rem 1rem;   
-
+      border-radius: 0 0rem 1rem 1rem;
     }
 
     .addToCart {
@@ -405,13 +434,13 @@ height: 150px;
       color: #fff;
       font-weight: 600;
       z-index: 100;
-     i{
-      font-size: 1.125rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-150%, -150%);
-     }
+      i {
+        font-size: 1.125rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-150%, -150%);
+      }
     }
   }
 }
@@ -487,7 +516,7 @@ footer {
       font-size: 20px;
       a {
         text-decoration: none;
-        color: #24160f !important;
+        color: #f95307 !important;
       }
     }
   }
