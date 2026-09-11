@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Napoli</title>
+
+    <!------------- Libraries ----------------------->
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwxH9j09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css"
+    />
+
+    <!------------------- Style ----------------------->
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="stylesheet" href="./products.css" />
+  </head>
+
+  <body dir="rtl">
+    <!-- ================= HEADER ================= -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center container">
+        <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+
+        <ul
+          class="align-items-center list-unstyled fs-5 d-none d-md-flex text-orange fw-bold"
+        >
+          <li><a href="./index.html">الرئيسية</a></li>
+          <!-- <li>قصتنا</li> -->
+          <li><a href="./products.html">منتجاتنا</a></li>
+          <li>مناسبات</li>
+          <li><a href="./offers.html">عروضنا</a></li>
+          <li>فروعنا</li>
+        </ul>
+
+        <button
+          class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
+        >
+          اطلب الان
+        </button>
+
+        <button
+          class="d-block d-md-none btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+        >
+          <i class="fa-solid fa-bars fs-4 text-orange"></i>
+        </button>
+
+        <div id="mobileMenu" class="offcanvas offcanvas-end">
+          <div class="d-flex justify-content-between align-items-center py-4">
+            <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark fs-4 text-orange"></i>
+            </button>
+          </div>
+
+          <ul
+            class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
+          >
+            <li><a href="./index.html">الرئيسية</a></li>
+            <!-- <li>قصتنا</li> -->
+            <li><a href="./products.html">منتجاتنا</a></li>
+            <li>مناسبات</li>
+            <li><a href="./offers.html">عروضنا</a></li>
+            <li>فروعنا</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="bg-img">
+        <div class="container content">
+          <h1 class="text-white">منتجاتنا</h1>
+          <p class="text-white">معك في كل ما يلائم ذوقك</p>
+          <button class="text-white btn bg-orange w-fit fs-4 rounded-3 p-2">
+            تحميل المنيو كامل <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- <img src="./images/banner3.jpg" class="bg-img" alt=""> -->
+    </section>
+
+    <!-- ==================== products ==================-->
+    <section class="products">
+      <div class="container my-5 d-flex flex-column gap-5">
+        <div
+          class="feature-card d-flex justify-content-center align-items-center"
+        >
+          <!-- <img src="./hero/tart.png" alt="" /> -->
+
+          <div class="d-flex flex-column align-items-center">
+            <h1>علـــي مـزاجـــك</h1>
+            <p>خصص طلبك بالطريقة اللي تحبها</p>
+
+            <div class="d-flex gap-5 mb-4">
+              <div>
+                <div class="p-2 d-flex justify-content-center">
+                  <i class="fa-solid fa-cake-candles text-orange fs-2"></i>
+                </div>
+                <h5>تورت مخصصة</h5>
+              </div>
+              <div>
+                <div class="p-2 d-flex justify-content-center">
+                  <i class="fa-solid fa-box-open text-orange fs-2"></i>
+                </div>
+                <h5>بوكس حلويات</h5>
+              </div>
+              <div>
+                <div class="p-2 d-flex justify-content-center">
+                  <i class="fa-solid fa-gift text-orange fs-2"></i>
+                </div>
+                <h5>علب هدايا</h5>
+              </div>
+            </div>
+
+            <button
+              class="text-white border-0 bg-orange w-fit fs-5 rounded-3 p-2 px-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@getbootstrap"
+            >
+              اطلب الان
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      تفاصيل طلبك
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close me-auto"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >الاسم:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >رقم التليفون:</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >تفاصيل طلبك:</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message-text"
+                        ></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >تصميم مشابه</label
+                        >
+                        <input type="file" class="form-control" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn-light px-3 p-2 rounded-2 border-0"
+                      data-bs-dismiss="modal"
+                    >
+                      غلق
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-dismiss="modal"
+                      class="border-0 p-2 rounded-2 px-3 bg-orange"
+                    >
+                      ارسال
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-between align-items-start"
+        >
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                الكل
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                حلويات غربية
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                حلويات شرقية
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                كيك
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                مناسبات
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                مخبوزات
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                فطائر
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                شيكولاتة
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                تشكيلات
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                متنوع
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content w-100 pt-5" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/tart.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>تورتة</h3>
+                      <h3>280 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/ice-can.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>ايس كان</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/image-removebg-preview (1).png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>شيكولاتة</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/croissant-removebg-preview.png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>كوراسون</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/tart.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>تورتة</h3>
+                      <h3>280 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/ice-can.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>ايس كان</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/image-removebg-preview (1).png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>شيكولاتة</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/croissant-removebg-preview.png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>كوراسون</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/tart.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>تورتة</h3>
+                      <h3>280 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img src="./hero/ice-can.png" class="" alt="" />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>ايس كان</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/image-removebg-preview (1).png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>شيكولاتة</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card position-relative">
+                    <img
+                      src="./hero/croissant-removebg-preview.png"
+                      class=""
+                      alt=""
+                    />
+                    <div
+                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h3>كوراسون</h3>
+                      <h3>20 ج.م</h3>
+                    </div>
+                    <div class="orange-rect"></div>
+                    <div class="addToCart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <!-- <i class="fa-solid fa-plus"></i> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=================== footer ================-->
+    <footer class="border-top mt-5 bg-brown text-white">
+      <div class="container pt-5">
+        <section class="row g-5">
+          <div class="col-12 col-md-4">
+            <img src="./images/logo.svg" class="logo" alt="" />
+            <p class="mt-4 w-75">
+              تأسست شركة قصر نابولي لإنتاج الحلويات في أسيوط عام 2000، وتعد
+              رائدة في صناعة الحلويات الشرقية والغربية.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fw-bold">روابط سريعة</h4>
+
+            <ul class="list-unstyled">
+              <li class="my-1"><a href="#">الرئيسية</a></li>
+              <li class="my-1"><a href="#">قصتنا </a></li>
+              <li class="my-1"><a href="./products.html">المنيو</a></li>
+              <li class="my-1"><a href="#">مناسبات</a></li>
+              <li class="my-1"><a href="./offers.html">عروضنا</a></li>
+              <li class="my-1"><a href="#">الفروع</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 text-white">
+            <h4 class="fw-bold">اتصل بنا</h4>
+
+            <p class="mb-0">تليفون:<span dir="ltr">010 123 1234 </span></p>
+            <p>
+              عنوان :
+              <span>
+                شارع امتداد, Yousry Raghib Rd، حي غرب, assiut, Assiut, EG</span
+              >
+            </p>
+
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/kasrnapoly" target="_blank">
+                <i class="fa-brands fa-facebook fs-4 text-orange"></i>
+              </a>
+
+              <a href="https://wa.me/20101231234" target="_blank">
+                <i class="fa-brands fa-whatsapp fs-4 text-orange"></i>
+              </a>
+
+              <a href="https://www.instagram.com/kasr_napoly/" target="_blank">
+                <i class="fa-brands fa-instagram fs-4 text-orange"></i>
+              </a>
+
+              <a href="https://www.tiktok.com/@kasr_napoli" target="_blank">
+                <i class="fa-brands fa-tiktok fs-4 text-orange"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <!------------------- Scripts ----------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

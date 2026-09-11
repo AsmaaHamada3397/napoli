@@ -1,0 +1,104 @@
+.hero {
+  width: 100%;
+    height: 100%;
+  .bg-img {
+    width: 100%;
+    height: 80vh;
+    background: url('./images/banner3.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    .content{
+      position: relative;
+     top:30%;
+    }
+}
+}
+
+.feature-card{
+    /* border: 1px solid #f95307; */
+    min-height: 400px;
+    /* background: url('./images/bg-feature.jpg') no-repeat center center/cover; */
+    border-radius: 1rem;
+    padding: 1rem;
+    img{
+        width: 300px;
+        object-fit: contain;
+    }
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+
+
+    .modal-header .btn-close {
+     margin-left: 0 !important;
+    }
+}
+
+.nav .nav-pills {
+  width: 100% !important;
+}
+
+.nav-pills .nav-link.active {
+  background: #f95307 !important;
+  color: #fff !important;
+  border-radius: 1rem !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+}
+
+.nav-link {
+  color: #24160f !important;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.card {
+  height: 350px;
+  background-color: #fff4d647;
+  border: 0 !important;
+  /* padding: 1rem; */
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 20px rgba(156, 91, 45, 0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  .product-details {
+    height: 150px;
+    background-color: #f954071a;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .orange-rect {
+    background-color: #f95307;
+    height: 1.5rem;
+    width: 100%;
+    border-radius: 0 0rem 1rem 1rem;
+  }
+
+  .addToCart {
+    position: absolute;
+    bottom: -3rem;
+    right: -4rem;
+    width: 130px;
+    height: 130px;
+    background-color: #f95307;
+    border-radius: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    z-index: 100;
+    i {
+      font-size: 1.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-130%, -150%);
+    }
+  }
+}

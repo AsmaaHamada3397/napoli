@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"); */
+
 body {
   font-family: "Beiruti", sans-serif;
-  background: #fff4d6;
-  word-spacing: 0.5rem !important;
+  /* font-family: "Cairo", sans-serif; */
+
+  background: #fff4d647;
+  /* word-spacing: 0.5rem !important; */
 }
 
 * {
@@ -96,6 +100,10 @@ header {
       gap: clamp(1rem, 3vw, 2rem);
       li {
         list-style: none;
+        a {
+          text-decoration: none;
+          color: #f95307;
+        }
       }
 
       li:hover {
@@ -108,11 +116,11 @@ header {
     }
   }
 
-  .btn-close{
+  .btn-close {
     color: #f95307 !important;
   }
 
-  .offcanvas{
+  .offcanvas {
     background-color: #24160f !important;
     backdrop-filter: blur(14px);
     width: 100% !important;
@@ -120,15 +128,14 @@ header {
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
   }
-  .offcanvas-end{
+  .offcanvas-end {
     background-color: transparent !important;
     /* backdrop-filter: blur(14px); */
     box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
   }
-  .offcanvas-backdrop.show{
+  .offcanvas-backdrop.show {
     background-color: #24160f !important;
-    opacity: 0.8 !important;
-
+    opacity: 0.9 !important;
   }
 
   .offcanvas-backdrop {
@@ -138,7 +145,8 @@ header {
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #000;}
+    background-color: #000;
+  }
 }
 
 /*---------------- hero ---------------*/
@@ -275,7 +283,7 @@ header {
     border-radius: 1rem;
     object-fit: cover;
     object-position: start;
-
+    max-height: 700px;
     @media screen and (max-width: 767px) {
       min-height: 300px;
     }
@@ -393,7 +401,7 @@ header {
 
   .card {
     height: 350px;
-    background-color: #fff4d6;
+    background-color: #fff4d647;
     border: 0 !important;
     /* padding: 1rem; */
     border-radius: 1rem !important;
@@ -435,11 +443,11 @@ header {
       font-weight: 600;
       z-index: 100;
       i {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-150%, -150%);
+        transform: translate(-130%, -150%);
       }
     }
   }
@@ -516,7 +524,7 @@ footer {
       font-size: 20px;
       a {
         text-decoration: none;
-        color: #f95307 !important;
+        color: #fff !important;
       }
     }
   }
