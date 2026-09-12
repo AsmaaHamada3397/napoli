@@ -1,3 +1,89 @@
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0.5rem;
+  left: 2.5rem;
+  right: 1.5rem;
+
+  .container {
+    max-width: 1920px;
+  }
+
+  nav {
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 0.75rem;
+    left: 0rem;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+
+    /* background: #fff; */
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
+
+    ul {
+      list-style: none;
+      position: relative;
+      top: 0.5rem;
+      color: #24160f;
+      gap: clamp(1rem, 3vw, 2rem);
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #f95307;
+        }
+      }
+
+      li:hover {
+        color: #f95307;
+        cursor: pointer;
+      }
+    }
+    .logo {
+      width: 120px;
+    }
+  }
+
+  .btn-close {
+    color: #f95307 !important;
+  }
+
+  .offcanvas {
+    background-color: #24160f !important;
+    backdrop-filter: blur(14px);
+    width: 100% !important;
+    padding: 0 1rem !important;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
+  }
+  .offcanvas-end {
+    background-color: transparent !important;
+    /* backdrop-filter: blur(14px); */
+    box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
+  }
+  .offcanvas-backdrop.show {
+    background-color: #24160f !important;
+    opacity: 0.9 !important;
+  }
+
+  .offcanvas-backdrop {
+    position: fixed;
+    top: -13px;
+    left: -17px;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
+}
+
+
+
 .hero {
   width: 100%;
     height: 100%;
