@@ -12,7 +12,7 @@
     height: 80vh;
     background:
       linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%),
-      url("./images/occ-hero.jpg") no-repeat center center/cover;
+      url("./../../images/occ-hero.jpg") no-repeat center center/cover;
     object-fit: cover;
     .content {
       position: relative;

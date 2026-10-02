@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Napoli</title>
+    <link rel="shortcut icon" href="./../../icons/favicon.ico" type="image/x-icon">
 
     <!------------- Libraries ----------------------->
 
@@ -39,7 +40,7 @@
 
     <!------------------- Style ----------------------->
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./../../style.css" />
 
     <link rel="stylesheet" href="./products.css" />
   </head>
@@ -48,23 +49,27 @@
     <!-- ================= HEADER ================= -->
     <header>
       <nav class="d-flex justify-content-between align-items-center container">
-        <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+        <img src="./../../images/logo2.svg" class="logo" alt="قصر نابولي" />
 
         <ul
           class="align-items-center list-unstyled fs-5 d-none d-md-flex text-orange fw-bold"
         >
-          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="./../../index.html">الرئيسية</a></li>
           <!-- <li>قصتنا</li> -->
-          <li><a href="./products.html">منتجاتنا</a></li>
-          <li><a href="./ocassion.html">مناسبات</a></li>
-          <li><a href="./offers.html">عروضنا</a></li>
-          <li>فروعنا</li>
+          <li class="my-1">
+            <a href="./products.html">منتجاتنا</a>
+          </li>
+          <li><a href="./../occassions/ocassion.html">مناسبات</a></li>
+          <li><a href="./../offers/offers.html">عروضنا</a></li>
+          <li><a href="./../branches/branches.html">فروعنا</a></li>
         </ul>
 
         <button
           class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
         >
-          <a href="./products.html" class="text-decoration-none text-white">اطلب الان</a>
+          <a href="./../products/products.html" class="text-decoration-none text-white"
+            >اطلب الان</a
+          >
         </button>
 
         <button
@@ -78,7 +83,7 @@
 
         <div id="mobileMenu" class="offcanvas offcanvas-end">
           <div class="d-flex justify-content-between align-items-center py-4">
-            <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+            <img src="./../../images/logo2.svg" class="logo" alt="قصر نابولي" />
 
             <button
               type="button"
@@ -93,12 +98,14 @@
           <ul
             class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
           >
-            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="./../../index.html">الرئيسية</a></li>
             <!-- <li>قصتنا</li> -->
-            <li><a href="./products.html">منتجاتنا</a></li>
-            <li><a href="./ocassion.html">مناسبات</a></li>
-            <li><a href="./offers.html">عروضنا</a></li>
-            <li>فروعنا</li>
+            <li class="my-1">
+              <a href="./products.html">منتجاتنا</a>
+            </li>
+            <li><a href="./../occassions/ocassion.html">مناسبات</a></li>
+            <li><a href="./../offers/offers.html">عروضنا</a></li>
+            <li><a href="./../branches/branches.html">فروعنا</a></li>
           </ul>
         </div>
       </nav>
@@ -111,7 +118,7 @@
           <h1 class="text-white">منتجاتنا</h1>
           <p class="text-white">معك في كل ما يلائم ذوقك</p>
           <button class="text-white btn bg-orange w-fit fs-4 rounded-3 p-2">
-            تحميل المنيو كامل <i class="fa-solid fa-download"></i>
+            تحميل منتجاتنا كامل <i class="fa-solid fa-download"></i>
           </button>
         </div>
       </div>
@@ -214,21 +221,27 @@
                         ></textarea>
                       </div>
                       <div class="d-flex gap-2">
-                          <div class="mb-3">
-                        <label for="message-text" class="col-form-label"
-                          >عدد القطع:</label
-                        >
-                       <input type="number" name="quantity" value="1" id="" class="form-control">
-                      </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label"
+                            >عدد القطع:</label
+                          >
+                          <input
+                            type="number"
+                            name="quantity"
+                            value="1"
+                            id=""
+                            class="form-control"
+                          />
+                        </div>
 
                         <div class="mb-3">
-                        <label for="message-text" class="col-form-label"
-                          > النكهة</label
-                        >
-                       <input type="text" class="form-control">
+                          <label for="message-text" class="col-form-label">
+                            النكهة</label
+                          >
+                          <input type="text" class="form-control" />
+                        </div>
                       </div>
-                      </div>
-                    
+
                       <div class="mb-3">
                         <label for="message-text" class="col-form-label"
                           >تصميم مشابه</label
@@ -662,7 +675,7 @@
       <div class="container pt-5">
         <section class="row g-5">
           <div class="col-12 col-md-4">
-            <img src="./images/logo.svg" class="logo" alt="" />
+            <img src="./../../images/logo.svg" class="logo" alt="" />
             <p class="mt-4 w-75">
               تأسست شركة قصر نابولي لإنتاج الحلويات في أسيوط عام 2000، وتعد
               رائدة في صناعة الحلويات الشرقية والغربية.
@@ -673,12 +686,18 @@
             <h4 class="fw-bold">روابط سريعة</h4>
 
             <ul class="list-unstyled">
-              <li class="my-1"><a href="#">الرئيسية</a></li>
-              <li class="my-1"><a href="#">قصتنا </a></li>
-              <li class="my-1"><a href="./products.html">المنيو</a></li>
-              <li class="my-1"><a href="./ocassion.html">مناسبات</a></li>
-              <li class="my-1"><a href="./offers.html">عروضنا</a></li>
-              <li class="my-1"><a href="#">الفروع</a></li>
+              <li class="my-1"><a href="./../../index.html">الرئيسية</a></li>
+              <!-- <li class="my-1"><a href="#">قصتنا </a></li> -->
+              <li class="my-1">
+                <a href="./products.html">منتجاتنا</a>
+              </li>
+              <li class="my-1">
+                <a href="./../occassions/occassions.html">مناسبات</a>
+              </li>
+              <li class="my-1"><a href="./../offers/offers.html">عروضنا</a></li>
+              <li class="my-1">
+                <a href="./../branches/branches.html">الفروع</a>
+              </li>
             </ul>
           </div>
 
@@ -723,6 +742,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./script.js"></script>
+    <script src="./../../script.js"></script>
   </body>
 </html>

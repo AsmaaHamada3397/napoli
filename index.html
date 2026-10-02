@@ -6,6 +6,8 @@
 
     <title>Napoli</title>
 
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
+
     <!------------- Libraries ----------------------->
 
     <!-- Bootstrap -->
@@ -44,8 +46,44 @@
 
   <body dir="rtl">
     <!-- ================= HEADER ================= -->
+    <div class="cartMenu">
+      <div
+        class="offcanvas offcanvas-start text-white"
+        tabindex="-1"
+        id="cart"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            سلة الحلويات
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-xmark tetxt-orange"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column-reverse cart-body"></div>
+        <p class="mt-auto mx-auto fs-4">
+          اجمالي السلة : <span class="total-price"></span>
+          <span class="px-2">ج.م</span>
+        </p>
+        <button class="bg-orange w-100 border-0 py-2">
+          <a
+            href="./pages/checkout/checkout.html"
+            class="text-decoration-none text-white fs-5 fw-bold"
+          >
+            اتمام الطلب
+          </a>
+        </button>
+      </div>
+    </div>
+
     <header>
-      <nav class="d-flex justify-content-between align-items-center container">
+      <nav class="align-items-center container">
         <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
 
         <ul
@@ -53,51 +91,75 @@
         >
           <li><a href="index.html">الرئيسية</a></li>
           <!-- <li>قصتنا</li> -->
-          <li><a href="./products.html">منتجاتنا</a></li>
-          <li><a href="./ocassion.html">مناسبات</a></li>
-          <li><a href="./offers.html">عروضنا</a></li>
-          <li>فروعنا</li>
+          <li class="my-1">
+            <a href="./pages/products/products.html">منتجاتنا</a>
+          </li>
+          <li><a href="./pages/occassions/ocassion.html">مناسبات</a></li>
+          <li><a href="./pages/offers/offers.html">عروضنا</a></li>
+          <li><a href="./pages/branches/branches.html">فروعنا</a></li>
         </ul>
 
-        <button
-          class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
-        >
-          <a href="./products.html" class="text-decoration-none text-white">اطلب الان</a>
-        </button>
-
-        <button
-          class="d-block d-md-none btn"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileMenu"
-        >
-          <i class="fa-solid fa-bars fs-4 text-orange"></i>
-        </button>
-
-        <div id="mobileMenu" class="offcanvas offcanvas-end">
-          <div class="d-flex justify-content-between align-items-center py-4">
-            <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+        <div class="d-flex">
+          <div class="d-flex gap-3 align-items-center">
+            <!-- <div
+              class="cart-container"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cart"
+              aria-controls="cart"
+            >
+              <img src="./icons/shopping-cart.png" class="cart" alt="" />
+              <span class="cart-count bg-orange text-white rounded-circle"
+                >0</span
+              >
+            </div> -->
 
             <button
-              type="button"
-              class="btn"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
+              class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
             >
-              <i class="fa-solid fa-xmark fs-4 text-orange"></i>
+              <a
+                href="./pages/products/products.html"
+                class="text-decoration-none text-white"
+                >اطلب الان</a
+              >
             </button>
           </div>
 
-          <ul
-            class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
+          <button
+            class="d-block d-md-none btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
           >
-            <li><a href="index.html">الرئيسية</a></li>
-            <!-- <li>قصتنا</li> -->
-            <li><a href="./products.html">منتجاتنا</a></li>
-            <li><a href="./ocassion.html">مناسبات</a></li>
-            <li><a href="./offers.html">عروضنا</a></li>
-            <li>فروعنا</li>
-          </ul>
+            <i class="fa-solid fa-bars fs-4 text-orange"></i>
+          </button>
+
+          <div id="mobileMenu" class="offcanvas offcanvas-end">
+            <div class="d-flex justify-content-between align-items-center py-4">
+              <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+
+              <button
+                type="button"
+                class="btn"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark fs-4 text-orange"></i>
+              </button>
+            </div>
+
+            <ul
+              class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
+            >
+              <li><a href="index.html">الرئيسية</a></li>
+              <!-- <li>قصتنا</li> -->
+              <li class="my-1">
+                <a href="./pages/products/products.html">منتجاتنا</a>
+              </li>
+              <li><a href="./pages/occassions/ocassion.html">مناسبات</a></li>
+              <li><a href="./pages/offers/offers.html">عروضنا</a></li>
+              <li><a href="./pages/branches/branches.html">فروعنا</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -109,20 +171,21 @@
         loop
         muted
         playsinline
+        preload="auto"
         disablepictureinpicture
         webkit-playsinline
       >
-        <source src="./videos/most-new.mp4" type="video/mp4" />
+        <source src="./videos/most3.mp4" type="video/mp4" />
       </video>
       <div class="overlay">
         <div class="text-center p-1">
-          <h1 class="text-white">قــــصـــر نـابـولـي</h1>
+          <h1 class="text-white">قصر نـابـولـي</h1>
           <p class="text-white">معك في كل ما يلائم ذوقك</p>
           <button class="btn bg-orange text-white fw-bold">
             <a href="./products.html" class="text-decoration-none text-white">
               اطلب الان
             </a>
-            </button>
+          </button>
         </div>
       </div>
     </section>
@@ -455,72 +518,7 @@
         <hr />
       </div>
 
-      <div class="row g-5">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card position-relative">
-            <img src="./hero/tart.png" class="" alt="" />
-            <div
-              class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-            >
-              <h3>تورتة</h3>
-              <h3>280 ج.م</h3>
-            </div>
-            <div class="orange-rect"></div>
-            <div class="addToCart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <!-- <i class="fa-solid fa-plus"></i> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card position-relative">
-            <img src="./hero/ice-can.png" class="" alt="" />
-            <div
-              class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-            >
-              <h3>ايس كان</h3>
-              <h3>20 ج.م</h3>
-            </div>
-            <div class="orange-rect"></div>
-            <div class="addToCart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <!-- <i class="fa-solid fa-plus"></i> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card position-relative">
-            <img src="./hero/image-removebg-preview (1).png" class="" alt="" />
-            <div
-              class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-            >
-              <h3>شيكولاتة</h3>
-              <h3>20 ج.م</h3>
-            </div>
-            <div class="orange-rect"></div>
-            <div class="addToCart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <!-- <i class="fa-solid fa-plus"></i> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card position-relative">
-            <img src="./hero/croissant-removebg-preview.png" class="" alt="" />
-            <div
-              class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-            >
-              <h3>كوراسون</h3>
-              <h3>20 ج.م</h3>
-            </div>
-            <div class="orange-rect"></div>
-            <div class="addToCart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <!-- <i class="fa-solid fa-plus"></i> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row g-5 best-seller-products"></div>
     </div>
     <!--=================== branches =============-->
     <section class="container my-4 branches">
@@ -550,7 +548,7 @@
           <button
             class="border-0 rounded-3 mt-4 bg-orange p-2 px-3 text-white fw-bold fs-5"
           >
-            اكتشف الفروع
+            <a href="./pages/branches/branches.html" class="text-white  text-decoration-none"> اكتشف الفروع </a>
           </button>
         </div>
       </div>
@@ -572,12 +570,20 @@
             <h4 class="fw-bold">روابط سريعة</h4>
 
             <ul class="list-unstyled">
-              <li class="my-1"><a href="#">الرئيسية</a></li>
+              <li class="my-1"><a href="./index.html">الرئيسية</a></li>
               <li class="my-1"><a href="#">قصتنا </a></li>
-              <li class="my-1"><a href="./products.html">المنيو</a></li>
-              <li class="my-1"><a href="./ocassion.html">مناسبات</a></li>
-              <li class="my-1"><a href="./offers.html">عروضنا</a></li>
-              <li class="my-1"><a href="#">الفروع</a></li>
+              <li class="my-1">
+                <a href="./pages/products/products.html">منتجاتنا</a>
+              </li>
+              <li class="my-1">
+                <a href="./pages/occassions/ocassion.html">مناسبات</a>
+              </li>
+              <li class="my-1">
+                <a href="./pages/offers/offers.html">عروضنا</a>
+              </li>
+              <li class="my-1">
+                <a href="./pages/branches/branches.html">الفروع</a>
+              </li>
             </ul>
           </div>
 

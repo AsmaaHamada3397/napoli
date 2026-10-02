@@ -65,6 +65,27 @@ body {
   border: 1px solid #f95307;
 }
 
+.cartMenu {
+  .offcanvas {
+    background-color: #24160f !important;
+  }
+
+  .offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-close{
+      color: #f95307 !important;
+      margin-left: 0rem !important;
+    }
+  }
+
+  .offcanvas-body{
+    flex-grow: 0 !important;
+  }
+}
+
 header {
   position: sticky;
   z-index: 1000;
@@ -85,7 +106,9 @@ header {
     right: 0;
     z-index: 1000;
     width: 100%;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* background: #fff; */
     backdrop-filter: blur(14px);
 
@@ -120,7 +143,7 @@ header {
     color: #f95307 !important;
   }
 
-  .offcanvas {
+  #mobileMenu .offcanvas {
     background-color: #24160f !important;
     backdrop-filter: blur(14px);
     width: 100% !important;
@@ -128,17 +151,25 @@ header {
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
   }
-  .offcanvas-end {
+  #mobileMenu .offcanvas-end {
     background-color: transparent !important;
     /* backdrop-filter: blur(14px); */
     box-shadow: 0 4px 20px rgba(156, 92, 45, 0.06);
   }
-  .offcanvas-backdrop.show {
+
+  #mobileMenu .btn-close {
+    color: #f95307 !important;
+    padding: 0 !important;
+  }
+  #mobileMenu .offcanvas-body {
+    min-height: 500px !important;
+  }
+  #mobileMenu .offcanvas-backdrop.show {
     background-color: #24160f !important;
     opacity: 0.9 !important;
   }
 
-  .offcanvas-backdrop {
+  #mobileMenu .offcanvas-backdrop {
     position: fixed;
     top: -13px;
     left: -17px;
@@ -147,6 +178,48 @@ header {
     height: 100vh;
     background-color: #000;
   }
+
+  .cart-container {
+    cursor: pointer;
+  }
+
+  .cart {
+    width: 25px;
+    height: 25px;
+
+    @media screen and (max-width: 767px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .cart-container {
+    position: relative;
+  }
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    @media screen and (max-width: 767px) {
+      width: 15px;
+      height: 15px;
+      top: -5px;
+      left: 10px;
+    }
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f95307;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.addToCart {
+  cursor: pointer;
 }
 
 /*---------------- hero ---------------*/

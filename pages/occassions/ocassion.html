@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Napoli</title>
+    <link rel="shortcut icon" href="./../../icons/favicon.ico" type="image/x-icon">
 
     <!------------- Libraries ----------------------->
 
@@ -39,31 +40,41 @@
 
     <!------------------- Style ----------------------->
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="occassion.css" />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./occassion.css" />
   </head>
 
   <body dir="rtl">
     <!-- ================= HEADER ================= -->
     <header>
       <nav class="d-flex justify-content-between align-items-center container">
-        <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+        <img
+          src="./../../../../images//logo2.svg"
+          class="logo"
+          alt="قصر نابولي"
+        />
 
         <ul
           class="align-items-center list-unstyled fs-5 d-none d-md-flex text-orange fw-bold"
         >
-          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="./../../index.html">الرئيسية</a></li>
           <!-- <li>قصتنا</li> -->
-          <li><a href="./products.html">منتجاتنا</a></li>
+          <li class="my-1">
+            <a href="./../products/products.html">منتجاتنا</a>
+          </li>
           <li><a href="./ocassion.html">مناسبات</a></li>
-          <li><a href="./offers.html">عروضنا</a></li>
-          <li>فروعنا</li>
+          <li><a href="./../offers/offers.html">عروضنا</a></li>
+          <li><a href="./../branches/branches.html">فروعنا</a></li>
         </ul>
 
         <button
           class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
         >
-          <a href="./products.html" class="text-decoration-none text-white">اطلب الان</a>
+          <a
+            href="./../products/products.html"
+            class="text-decoration-none text-white"
+            >اطلب الان</a
+          >
         </button>
 
         <button
@@ -77,7 +88,11 @@
 
         <div id="mobileMenu" class="offcanvas offcanvas-end">
           <div class="d-flex justify-content-between align-items-center py-4">
-            <img src="./images/logo2.svg" class="logo" alt="قصر نابولي" />
+            <img
+              src="./../../../../images//logo2.svg"
+              class="logo"
+              alt="قصر نابولي"
+            />
 
             <button
               type="button"
@@ -92,12 +107,14 @@
           <ul
             class="list-unstyled fs-5 text-orange d-flex flex-column align-items-start justify-content-start gap-3 fw-bold"
           >
-            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="./../../index.html">الرئيسية</a></li>
             <!-- <li>قصتنا</li> -->
-            <li><a href="./products.html">منتجاتنا</a></li>
+            <li class="my-1">
+              <a href="./../products/products.html">منتجاتنا</a>
+            </li>
             <li><a href="./ocassion.html">مناسبات</a></li>
-            <li><a href="./offers.html">عروضنا</a></li>
-            <li>فروعنا</li>
+            <li><a href="./../offers/offers.html">عروضنا</a></li>
+            <li><a href="./../branches/branches.html">فروعنا</a></li>
           </ul>
         </div>
       </nav>
@@ -120,21 +137,20 @@
           </div>
         </div>
 
-        <!-- <img src="./images/banner3.jpg" class="bg-img" alt=""> -->
+        <!-- <img src="./../../images//banner3.jpg" class="bg-img" alt=""> -->
       </section>
 
       <section class="occassions container mt-5">
         <div class="row g-4 py-5">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/feasts.jpg" class="" alt="" />
+              <img src="./../../images//feasts.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">أعياد و مناسبات موسمية</h3>
                   <p class="text-white fs-5">نكهات نابولي لكل موسم واحتفال</p>
 
-                   <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -143,14 +159,13 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/birthday.jpg" class="" alt="" />
+              <img src="./../../images//birthday.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">أعياد الميلاد</h3>
                   <p class="text-white">احتفالات حلوة تبدأ من أول قطعة</p>
 
-                 <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -160,14 +175,13 @@
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/new-born.jpg" class="" alt="" />
+              <img src="./../../images//new-born.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">المناسبات العائلية</h3>
                   <p class="text-white">لحظات عائلية بطعم نابولي</p>
 
-                <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -177,14 +191,13 @@
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/Wedding.jpg" class="" alt="" />
+              <img src="./../../images//Wedding.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">حفلات الزفاف و الخطوبات</h3>
                   <p class="text-white">تفاصيل حلوة تكمّل يومك المميز</p>
 
-                   <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -194,14 +207,13 @@
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/company.jpg" class="" alt="" />
+              <img src="./../../images//company.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">المناسبات الرسمية والشركات</h3>
                   <p class="text-white">لضيافة تليق بكل مناسبة رسمية</p>
 
-                     <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -211,14 +223,13 @@
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/gifts.jpg" class="" alt="" />
+              <img src="./../../images///gifts.jpg" class="" alt="" />
               <div class="overlay">
                 <div class="content">
                   <h3 class="text-white">الهدايا والتوزيعات</h3>
                   <p class="text-white fs-5">هدايا أنيقة بطعم نابولي</p>
 
-                   <button class="border-0 bg-transparent fs-6 text-orange">
-                   
+                  <button class="border-0 bg-transparent fs-6 text-orange">
                     اكتشف المزيد <i class="fa-solid fa-arrow-left-long"></i>
                   </button>
                 </div>
@@ -234,7 +245,7 @@
       <div class="container pt-5">
         <section class="row g-5">
           <div class="col-12 col-md-4">
-            <img src="./images/logo.svg" class="logo" alt="" />
+            <img src="./../../images//logo.svg" class="logo" alt="" />
             <p class="mt-4 w-75">
               تأسست شركة قصر نابولي لإنتاج الحلويات في أسيوط عام 2000، وتعد
               رائدة في صناعة الحلويات الشرقية والغربية.
@@ -245,12 +256,16 @@
             <h4 class="fw-bold">روابط سريعة</h4>
 
             <ul class="list-unstyled">
-              <li class="my-1"><a href="#">الرئيسية</a></li>
-              <li class="my-1"><a href="#">قصتنا </a></li>
-              <li class="my-1"><a href="./products.html">المنيو</a></li>
+              <li class="my-1"><a href="./../../index.html">الرئيسية</a></li>
+              <!-- <li class="my-1"><a href="#">قصتنا </a></li> -->
+              <li class="my-1">
+                <a href="./../products/products.html">منتجاتنا</a>
+              </li>
               <li class="my-1"><a href="./ocassion.html">مناسبات</a></li>
-              <li class="my-1"><a href="./offers.html">عروضنا</a></li>
-              <li class="my-1"><a href="#">الفروع</a></li>
+              <li class="my-1"><a href="./../offers/offers.html">عروضنا</a></li>
+              <li class="my-1">
+                <a href="./../branches/branches.html">الفروع</a>
+              </li>
             </ul>
           </div>
 
