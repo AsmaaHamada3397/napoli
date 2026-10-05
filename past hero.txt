@@ -5,7 +5,7 @@
         <div class="swiper-wrapper">
           <!-- ================= SLIDE 1 ================= -->
           <div
-            class="swiper-slide"
+            class="swiper-slide "
             style="background-image: url(./images/chocolate2.jpg)"
           >
             <div class="hero-content">
