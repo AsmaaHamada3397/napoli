@@ -8,7 +8,7 @@
             class="swiper-slide "
             style="background-image: url(./images/chocolate2.jpg)"
           >
-            <div class="hero-content">
+            <div class="hero-content ">
 
               <span class="hero-label">
                 جديدنا
