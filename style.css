@@ -475,6 +475,57 @@ header {
   .crown {
     transform: translate(-50%, -80%);
   }
+
+.new-product-banner {
+  background: url("./images/bg-new-product.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  h1 {
+    color: #e9ca79;
+    font-size: clamp(1.75rem, 8vw, 4rem);
+    font-weight: 700;
+    word-spacing: 0.5rem;
+    letter-spacing: 4px;
+  }
+
+  span {
+    color: #f7eabf;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    letter-spacing: 4px;
+  }
+
+  p {
+    color: #fffaf1;
+    max-width: 70%;
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+
+  button {
+    margin-top: auto;
+    max-width: 150px;
+  }
+
+  .banner-img {
+    width: 40%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+    @media screen and (max-width: 572px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 573px) and (max-width: 992px) {
+      width: 750px;
+      
+    }
+  }
+}
 }
 
 /* ------------------- best seller ------------------*/
