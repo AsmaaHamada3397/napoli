@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Napoli</title>
-    <link rel="shortcut icon" href="./../../icons/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./../../icons/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!------------- Libraries ----------------------->
 
@@ -67,7 +71,9 @@
         <button
           class="d-none d-md-block bg-orange border-0 p-2 px-3 rounded-3 text-white text-uppercase fw-bold fs-6"
         >
-          <a href="./../products/products.html" class="text-decoration-none text-white"
+          <a
+            href="./../products/products.html"
+            class="text-decoration-none text-white"
             >اطلب الان</a
           >
         </button>
@@ -132,7 +138,7 @@
         <div
           class="feature-card d-flex justify-content-center align-items-center"
         >
-          <!-- <img src="./hero/tart.png" alt="" /> -->
+          <!-- <img src="./../../hero/tart.png" alt="" /> -->
 
           <div class="d-flex flex-column align-items-center">
             <h1>علـــي مـزاجـــك</h1>
@@ -275,396 +281,194 @@
           class="d-flex flex-column justify-content-between align-items-start"
         >
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="pills-home-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-home"
-                type="button"
-                role="tab"
-                aria-controls="pills-home"
-                aria-selected="true"
-              >
-                الكل
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-profile-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-profile"
-                type="button"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-              >
-                حلويات غربية
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                حلويات شرقية
-              </button>
-            </li>
-
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                كيك
-              </button>
-            </li>
-
-            <li>
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                مناسبات
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                مخبوزات
-              </button>
-            </li>
-            <li>
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                فطائر
-              </button>
-            </li>
-            <li>
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                شيكولاتة
-              </button>
-            </li>
-            <li>
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                تشكيلات
-              </button>
-            </li>
-            <li>
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                متنوع
-              </button>
-            </li>
           </ul>
+
           <div class="tab-content w-100 pt-5" id="pills-tabContent">
             <div
               class="tab-pane fade show active"
-              id="pills-home"
+              id="all"
               role="tabpanel"
-              aria-labelledby="pills-home-tab"
+              aria-labelledby="all-tab"
               tabindex="0"
             >
-              <div class="row g-5">
-                <div class="col-12 col-md-6 col-lg-3">
+              <div class="row g-5 product-cards">
+                <!-- تورتة -->
+                <div
+                  class="col-12 col-md-6 col-lg-3 product-card"
+                  data-category="western"
+                >
                   <div class="card position-relative">
-                    <img src="./hero/tart.png" class="" alt="" />
+                    <img src="./../../hero/tart.png" class="" alt="" />
+
                     <div
                       class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
                     >
                       <h3>تورتة</h3>
                       <h3>280 ج.م</h3>
                     </div>
+
                     <div class="orange-rect"></div>
+
                     <div class="addToCart">
                       <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+
+                <!-- ايس كان -->
+                <div
+                  class="col-12 col-md-6 col-lg-3 product-card"
+                  data-category="western"
+                >
                   <div class="card position-relative">
-                    <img src="./hero/ice-can.png" class="" alt="" />
+                    <img src="./../../../../hero/ice-can.png" class="" alt="" />
+
                     <div
                       class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
                     >
                       <h3>ايس كان</h3>
                       <h3>20 ج.م</h3>
                     </div>
+
                     <div class="orange-rect"></div>
+
                     <div class="addToCart">
                       <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+
+                <!-- شيكولاتة -->
+                <div
+                  class="col-12 col-md-6 col-lg-3 product-card"
+                  data-category="chocolate"
+                >
                   <div class="card position-relative">
                     <img
-                      src="./hero/image-removebg-preview (1).png"
+                      src="./../../hero/image-removebg-preview1.png"
                       class=""
                       alt=""
                     />
+
                     <div
                       class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
                     >
                       <h3>شيكولاتة</h3>
                       <h3>20 ج.م</h3>
                     </div>
+
                     <div class="orange-rect"></div>
+
                     <div class="addToCart">
                       <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+
+                <!-- كوراسون -->
+                <div
+                  class="col-12 col-md-6 col-lg-3 product-card"
+                  data-category="bakery"
+                >
                   <div class="card position-relative">
                     <img
-                      src="./hero/croissant-removebg-preview.png"
+                      src="./../../../../hero/croissant-removebg-preview.png"
                       class=""
                       alt=""
                     />
+
                     <div
                       class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
                     >
                       <h3>كوراسون</h3>
                       <h3>20 ج.م</h3>
                     </div>
+
                     <div class="orange-rect"></div>
+
                     <div class="addToCart">
                       <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- التصنيفات دي موجودة حاليًا كـ targets للـ tabs،
+       لكن المنتجات نفسها موجودة مرة واحدة في #all.
+       بعد كده الـ JS هو اللي هيعمل الفلترة على الـ DOM. -->
+
             <div
               class="tab-pane fade"
-              id="pills-profile"
+              id="western"
               role="tabpanel"
-              aria-labelledby="pills-profile-tab"
+              aria-labelledby="western-tab"
               tabindex="0"
-            >
-              <div class="row g-5">
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img src="./hero/tart.png" class="" alt="" />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>تورتة</h3>
-                      <h3>280 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img src="./hero/ice-can.png" class="" alt="" />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>ايس كان</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img
-                      src="./hero/image-removebg-preview (1).png"
-                      class=""
-                      alt=""
-                    />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>شيكولاتة</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img
-                      src="./hero/croissant-removebg-preview.png"
-                      class=""
-                      alt=""
-                    />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>كوراسون</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ></div>
+
             <div
               class="tab-pane fade"
-              id="pills-contact"
+              id="eastern"
               role="tabpanel"
-              aria-labelledby="pills-contact-tab"
+              aria-labelledby="eastern-tab"
               tabindex="0"
-            >
-              <div class="row g-5">
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img src="./hero/tart.png" class="" alt="" />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>تورتة</h3>
-                      <h3>280 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img src="./hero/ice-can.png" class="" alt="" />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>ايس كان</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img
-                      src="./hero/image-removebg-preview (1).png"
-                      class=""
-                      alt=""
-                    />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>شيكولاتة</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card position-relative">
-                    <img
-                      src="./hero/croissant-removebg-preview.png"
-                      class=""
-                      alt=""
-                    />
-                    <div
-                      class="p-4 w-100 product-details d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <h3>كوراسون</h3>
-                      <h3>20 ج.م</h3>
-                    </div>
-                    <div class="orange-rect"></div>
-                    <div class="addToCart">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      <!-- <i class="fa-solid fa-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="cakes"
+              role="tabpanel"
+              aria-labelledby="cakes-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="occasions"
+              role="tabpanel"
+              aria-labelledby="occasions-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="bakery"
+              role="tabpanel"
+              aria-labelledby="bakery-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="pies"
+              role="tabpanel"
+              aria-labelledby="pies-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="chocolate"
+              role="tabpanel"
+              aria-labelledby="chocolate-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="assortments"
+              role="tabpanel"
+              aria-labelledby="assortments-tab"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="tab-pane fade"
+              id="misc"
+              role="tabpanel"
+              aria-labelledby="misc-tab"
+              tabindex="0"
+            ></div>
           </div>
         </div>
       </div>
@@ -742,6 +546,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./../../script.js"></script>
+    <script src="./products.js"></script>
   </body>
 </html>
