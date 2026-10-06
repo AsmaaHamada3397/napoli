@@ -45,18 +45,18 @@ bestSellerProducts.forEach((el, index) => {
 });
 
 const cart = [
-  {
-    name: "تورتة",
-    image: "./hero/tart.png",
-    price: 280,
-    qty: 2,
-  },
-  {
-    name: "ايس كان",
-    image: "./hero/ice-can.png",
-    price: 20,
-    qty: 3,
-  },
+  // {
+  //   name: "تورتة",
+  //   image: "./hero/tart.png",
+  //   price: 280,
+  //   qty: 2,
+  // },
+  // {
+  //   name: "ايس كان",
+  //   image: "./hero/ice-can.png",
+  //   price: 20,
+  //   qty: 3,
+  // },
 ];
 
 const cartBody = document.querySelector(".cart-body");
@@ -116,16 +116,13 @@ const showCart = () => {
 showCart();
 
 const addToCart = (index) => {
-
   cart.push(bestSellerProducts[index]);
-
 
   cartBody.innerHTML = "";
   showCart();
   calcTotal();
   showCartCount();
 };
-
 
 //increase qty
 const increaseQty = (cartIndex) => {
@@ -149,15 +146,14 @@ const decreaseQty = (cartIndex) => {
 
 //delete item from cart
 const deleteItem = (cartIndex) => {
-cart.splice(cartIndex, 1);
-cartBody.innerHTML = "";
-showCart();
-showCartCount();
-calcTotal();
-}
+  cart.splice(cartIndex, 1);
+  cartBody.innerHTML = "";
+  showCart();
+  showCartCount();
+  calcTotal();
+};
 
-
-//cart count number 
+//cart count number
 const cartCount = document.querySelector(".cart-count");
 const showCartCount = () => {
   if (cart.length === 0) {
@@ -168,16 +164,15 @@ const showCartCount = () => {
 };
 showCartCount();
 
-
 //total cart price
 
 const totalPrice = document.querySelector(".total-price");
 const calcTotal = () => {
   let total = 0;
-  cart.forEach( (el,index) => {
-    total += (el.price * el.qty);
+  cart.forEach((el, index) => {
+    total += el.price * el.qty;
   });
   totalPrice.innerHTML = total;
 };
 
-  calcTotal();
+calcTotal();

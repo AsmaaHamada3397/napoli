@@ -74,7 +74,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  .cartMenu .btn-close {
+   .btn-close {
     color: #f95307 !important;
     margin-left: 0rem !important;
   }
@@ -206,7 +206,7 @@ header {
     }
   }
 
-  .btn-close {
+   .btn-close {
     color: #f95307 !important;
   }
 
